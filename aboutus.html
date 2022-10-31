@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+      .logo {
+        width: 80px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: -6px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+      }
+      li a {
+        display: block;
+        text-align: center;
+        color: navy;
+        padding: 20px 30px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .left {
+        float: left;
+      }
+
+      li {
+        float: right;
+      }
+      .navy a:hover {
+        background-color: navy;
+        border-radius: 10px;
+        color: white;
+      }
+      .start {
+        position: relative;
+        text-align: center;
+        /* -webkit-text-stroke: 1px white; */
+      }
+      .aboutus {
+        color: rgb(8, 8, 83);
+        font-weight: bold;
+        text-shadow: 0px 0px 10px white, 0px 0px 12px white;
+      }
+      .button :link {
+        background-color: rgb(8, 8, 83);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: transparent;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+      .button a:hover {
+        background-color: white;
+        color: rgb(8, 8, 83);
+      }
+      .button:visited {
+        color: white;
+      }
+
+      .trucks {
+        width: 100%;
+        height: 350px;
+        filter: blur(2px);
+        opacity: 0.8;
+        /* border: 4px rgb(8, 8, 83) solid; */
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+      }
+      .whoarewe {
+        background-color: white;
+        width: 100%;
+        font-size: 20px;
+        color: rgb(36, 36, 84);
+        text-indent: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pepe {
+        width: 400px;
+        height: 380px;
+      }
+      .kent {
+        width: 400px;
+        height: 380px;
+      }
+      .kevin {
+        width: 400px;
+        height: 380px;
+      }
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <div class="left">
+        <li>
+          <a href="pecocleaningservices.html"
+            ><img
+              class="logo leftnav"
+              src="images/pecologo-removebg-preview.png"
+              alt="logo"
+              title="logo"
+          /></a>
+        </li>
+      </div>
+      <div>
+        <li class="navy"><a href="pecositemap.html">Sitemap</a></li>
+        <li class="navy"><a href="contactus.html">Contact Us</a></li>
+        <li class="navy"><a href="locations.html">Locations</a></li>
+        <li class="navy"><a href="ourwork.html">Our Work</a></li>
+        <li class="navy"><a href="aboutus.html">About Us</a></li>
+        <li class="navy"><a href="index.html">Home</a></li>
+      </div>
+    </ul>
+    <div class="header start">
+      <img
+        class="trucks"
+        src="images/pecotrucks.jpg"
+        alt="trucks"
+        title="Peco's Trucks"
+      />
+      <div class="centered">
+        <div class="aboutus"><h1>ABOUT US</h1></div>
+        <div class="button"><a href="contactus.html">REQUEST A QUOTE</a></div>
+      </div>
+    </div>
+    <div class="aboutsection">
+      <div class="whoarewe">
+        <br />
+        <h2>Who are we?</h2>
+        <p>
+          We are a family owned and operated service company since 2005 that is
+          constantly growing. With over years of experience, we have built a
+          reliable client-base around the Denver Metro Area. We provide a
+          variety of cleaning services in the residential, commercial and
+          industrial market. The services include: Pressure Washing, Striping,
+          Sweeping, Sign & Tire-Stopper installations & Removals, and many more.
+          Regardless of the project being small or large, we will get it done.
+          We believe it is our level of dedication and attention to detail that
+          has kept our clients coming back. If it leaves a mark, we can get it
+          done.
+        </p>
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to provide reliable and awe-inspiring work to our
+          customers. PECO's service will not be done until we LEAVE A MARK.
+          Nothing is more valuable satisfying our cusomters with whatever
+          service they request. We plan to expand our services all throughout
+          Colorado and establish new contracts with new business's and
+          cusotmers. We aspire to move our business outside of Colorado, into
+          other states. We also hope to create safe and organized parking lots
+          and garages to the people with our services.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img class="pepe" src="images/pepe.jpg" alt="Pepe" title="CEO" />
+          <div class="container">
+            <h2>Juan Hernandez</h2>
+            <p class="title">CEO & Founder</p>
+            <p>juanpepehernandeza@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img class="kent" src="images/kent.jpg" alt="Kent" title="Kent" />
+          <div class="container">
+            <h2>Kent Hernandez-Pedroza</h2>
+            <p class="title">Project Manager</p>
+            <p>kenthernandez1414@yahoo.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img
+            class="kevin"
+            src="images/kevinpm.jpg"
+            alt="Kevin"
+            title="Kevin"
+          />
+          <div class="container">
+            <h2>Kevin Hernandez-Pedroza</h2>
+            <p class="title">Designer and Marketer</p>
+            <p>kevinhernandez1712@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
