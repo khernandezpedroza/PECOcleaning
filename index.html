@@ -170,7 +170,7 @@
       </div>
       <div class="service">
         <div class="container">
-          <h1 class="servicenames">Pressure Washing</h1>
+          <h1 id="jobs" class="servicenames">Pressure Washing</h1>
           <a href="ourwork.html">
             <img
               class="one"
@@ -191,7 +191,7 @@
           </p> -->
         </div>
         <div class="container">
-          <h1 class="servicenames">Paint Striping</h1>
+          <h1 id="job2" class="servicenames">Paint Striping</h1>
           <a href="ourwork.html">
             <img
               class="two"
@@ -210,7 +210,7 @@
             However, your garage will look cleaner than your competition.
           </p> -->
         </div>
-        <div class="container">
+        <div h1="jobs" class="container">
           <h1 class="servicenames">Sweeping</h1>
           <a href="ourwork.html">
             <img
@@ -261,6 +261,31 @@
         sweep.style.border = "5px solid lightblue";
       }
       document.getElementById("swept").addEventListener("click", changesweep);
+
+      function mouseOver() {
+        const jobs = document.getElementById("jobs");
+        jobs.style.color = "lightblue";
+      }
+      document.getElementById("jobs").addEventListener("mouseover", mouseOver);
+
+      function mouseOff() {
+        const jobs = document.getElementById("jobs");
+        jobs.style.color = "rgb(8, 8, 83)";
+      }
+      document.getElementById("jobs").addEventListener("mouseout", mouseOff);
+
+
+      // function mouseOver() {
+      //   const job2 = document.getElementById("job2");
+      //   job2.style.color = "lightblue";
+      // }
+      // document.getElementById("job2").addEventListener("mouseover", mouseOver);
+
+      // function mouseOff() {
+      //   const job2 = document.getElementById("job2");
+      //   job2.style.color = "rgb(8, 8, 83)";
+      // }
+      // document.getElementById("job2").addEventListener("mouseout", mouseOff);
     </script>
   </body>
 </html>
