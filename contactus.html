@@ -84,10 +84,14 @@
     <div class="column">
       <h1>GET A FREE INQUIRY</h1>
       <h3>Please fill out the form below</h3>
-      <form action="https://oim-apis.herokuapp.com/form2" method="post">
+      <form
+        id="form"
+        action="https://oim-apis.herokuapp.com/form2"
+        method="post"
+      >
         <p>Customer Details:</p>
         <div>
-          <label for="input-last-name">Last Name:</label>
+          <label id="lastname" for="input-last-name">Last Name:</label>
           <input
             type="text"
             placeholder="Last Name"
@@ -209,5 +213,14 @@
       </form>
     </div>
     <div class="columnright"></div>
+    <script>
+      function lastnamevalidate() {
+        let x = document.forms["#form"].value;
+        if (x == "") {
+          alert("Please fill out");
+          return false;
+        }
+      }
+    </script>
   </body>
 </html>

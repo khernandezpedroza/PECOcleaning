@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Locations</title>
-    <link rel="icon" href="images/favicon.ico" type="icon"/>
+    <link rel="icon" href="images/favicon.ico" type="icon" />
     <style>
       .logo {
         width: 80px;
@@ -43,24 +43,31 @@
       }
       .flag {
         width: 100%;
-        height: 500px;
+        height: 350px;
         filter: blur(2px);
       }
       .text-box {
         text-align: center;
         position: absolute;
         font-size: 60px;
-        bottom: 10px;
-        right: 350px;
+        bottom: 150px;
+        right: 150px;
         background-color: transparent;
         color: white;
         text-shadow: 4px 6px 6px #000000;
       }
       h1 {
-        text-align: center;
-      } .location{
+        text-align: left;
+      }
+      .location {
         text-decoration: none;
         color: black;
+      }
+      body {
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
       }
     </style>
   </head>
@@ -97,14 +104,42 @@
         <h2>Locations</h2>
       </div>
     </div>
-    <a class="location" href="https://goo.gl/maps/csSB5mwqKNCBoApB7"
-      ><h1>Denver</h1></a
-    >
+    <div class="denver">
+      <a class="location" href="https://goo.gl/maps/csSB5mwqKNCBoApB7"
+        ><h1>Denver</h1></a
+      >
+      <iframe
+        class=""
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196281.64169563106!2d-104.85511145!3d39.764338949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b80aa231f17cf%3A0x118ef4f8278a36d6!2sDenver%2C%20CO!5e0!3m2!1sen!2sus!4v1668096202683!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
     <a class="location" href="https://goo.gl/maps/YQYCewN1FZTMZnvV9"
       ><h1>Aurora</h1></a
-    >
+    ><iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196496.70472278428!2d-104.68683355!3d39.688835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c588622ba2b9b%3A0x8441e0688ba2e678!2sAurora%2C%20CO!5e0!3m2!1sen!2sus!4v1668135076843!5m2!1sen!2sus"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
     <a class="location" href="https://goo.gl/maps/NBezaCYo932yXMk5A"
       ><h1>Boulder</h1></a
-    >
+    ><iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97761.94801455313!2d-105.31001791145273!3d40.02942026488003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b8d4e278dafd3%3A0xc8393b7ca01b8058!2sBoulder%2C%20CO!5e0!3m2!1sen!2sus!4v1668135135776!5m2!1sen!2sus"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </body>
 </html>

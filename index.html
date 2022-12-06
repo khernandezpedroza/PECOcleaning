@@ -10,9 +10,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" href="images/favicon.ico" type="icon"/>
+    <link rel="icon" href="images/favicon.ico" type="icon" />
     <style>
-      body{
+      body {
         margin: 0;
       }
       .logo {
@@ -118,6 +118,15 @@
       .column.middle {
         width: 100%;
       }
+      p {
+        text-align: center;
+        padding: 0px 25px 0px 25px;
+      }
+      #wash,
+      #paint,
+      #swept {
+        border: rgb(8, 8, 83) 5px solid;
+      }
     </style>
   </head>
   <body>
@@ -162,32 +171,96 @@
       <div class="service">
         <div class="container">
           <h1 class="servicenames">Pressure Washing</h1>
-          <img
-            class="one"
-            src="images/washer.jpg"
-            alt="Pressure-Washer"
-            title="Pressure-Washer"
-          />
+          <a href="ourwork.html">
+            <img
+              class="one"
+              src="images/washer.jpg"
+              alt="Pressure-Washer"
+              title="Pressure-Washer"
+          /></a>
+          <p id="wash">Pressure Washing: Click here to learn more!</p>
+          <!-- <p>
+            Our pressure washing service will keep your property cleaner than
+            ever. We utilize powerful engines that are attached to tanks that
+            hold about 250 gallons of water. This tank can help us wash a 3
+            level garage in under 3 hours. The bigger the tank the more water we
+            have to wash the garage. This also can wash it at a faster pace. We
+            have the options of pressure washing the floors of youe commercial
+            garage, the driveway of your homes, or anything that needs cleaning
+            with a strong pressure hose.
+          </p> -->
         </div>
         <div class="container">
           <h1 class="servicenames">Paint Striping</h1>
-          <img
-            class="two"
-            src="images/striper1.jpg"
-            alt="striper"
-            title="Striping Machine"
-          />
+          <a href="ourwork.html">
+            <img
+              class="two"
+              src="images/striper1.jpg"
+              alt="striper"
+              title="Striping Machine"
+          /></a>
+          <p id="paint">Paint Striping: Click here to learn more!</p>
+          <!-- <p>
+            Our sweeping sevice will eliminate any trash or dust that is left at
+            your garage or location. We utilize large sweepers and drive them
+            around the garages or any location to pick up any trash or dust.
+            These sweepers will prevent your location to have any contamination
+            or dirty residue. Our sweepers are able to pick up any sort of trash
+            but it needs to be smaller than a regular sized water bottle.
+            However, your garage will look cleaner than your competition.
+          </p> -->
         </div>
         <div class="container">
           <h1 class="servicenames">Sweeping</h1>
-          <img
-            class="three"
-            src="images/Sweeper.jpg"
-            alt="sweeper"
-            title="Sweeping Machine"
-          />
+          <a href="ourwork.html">
+            <img
+              class="three"
+              src="images/Sweeper.jpg"
+              alt="sweeper"
+              title="Sweeping Machine"
+          /></a>
+          <p id="swept">Sweeping: Click here to learn more!</p>
+          <!-- <p>
+            We are also responsible in making your parking lots well organized
+            by the paint jobs. We utilize a large number of striper machines
+            with small carts attached to them to get the job done at a faster
+            pace. We organize our machines based on the colors. For example, we
+            have 3 yellow stripers, 2 blue stripers, about 2 gray stripers, and
+            3 other machines that we keep for exclusive colors. Every job is
+            different so we need to our options spreaded out. We also utilize
+            seperate types of materials such as plastics, utencils, tinter,
+            gasoline, etc.
+          </p> -->
         </div>
       </div>
     </div>
+    <!-- <div class="footer"></div> -->
+    <script>
+      function changepressurewashing() {
+        const wash = document.getElementById("wash");
+        wash.innerHTML =
+          "Our pressure washing service will keep your property cleaner than ever. We utilize powerful engines that are attached to tanks that hold about 250 gallons of water. This tank can help us wash a 3 level garage in under 3 hours. The bigger the tank the more water we have to wash the garage. This also can wash it at a faster pace. We have the options of pressure washing the floors of youe commercial garage, the driveway of your homes, or anything that needs cleaning with a strong pressure hose.";
+        wash.style.border = "5px solid lightblue";
+      }
+      document
+        .getElementById("wash")
+        .addEventListener("click", changepressurewashing);
+
+      function changepaint() {
+        const paint = document.getElementById("paint");
+        paint.innerHTML =
+          " We are also responsible in making your parking lots well organized by the paint jobs. We utilize a large number of striper machines with small carts attached to them to get the job done at a faster pace. We organize our machines based on the colors. For example, we have 3 yellow stripers, 2 blue stripers, about 2 gray stripers, and 3 other machines that we keep for exclusive colors. Every job is different so we need to our options spreaded out. We also utilize seperate types of materials such as plastics, utencils, tinter, gasoline, etc.";
+        paint.style.border = "5px solid lightblue";
+      }
+      document.getElementById("paint").addEventListener("click", changepaint);
+
+      function changesweep() {
+        const sweep = document.getElementById("swept");
+        sweep.innerHTML =
+          " Our sweeping sevice will eliminate any trash or dust that is left at your garage or location. We utilize large sweepers and drive them around the garages or any location to pick up any trash or dust. These sweepers will prevent your location to have any contamination or dirty residue. Our sweepers are able to pick up any sort of trash but it needs to be smaller than a regular sized water bottle. However, your garage will look cleaner than your competition.";
+        sweep.style.border = "5px solid lightblue";
+      }
+      document.getElementById("swept").addEventListener("click", changesweep);
+    </script>
   </body>
 </html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Work</title>
-    <link rel="icon" href="images/favicon.ico" type="icon"/>
+    <link rel="icon" href="images/favicon.ico" type="icon" />
     <style>
       .logo {
         width: 80px;
@@ -90,12 +90,13 @@
         border-collapse: collapse;
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
+        width: 50%;
       }
       .table,
       tr,
       th,
       td {
+        text-align: center;
         border: 3px solid rgb(8, 8, 83);
         align-items: center;
       }
@@ -196,101 +197,198 @@
       <div class="column">
         <table>
           <tr class="beforeafter">
-            <th>Before</th>
-            <th>After</th>
+            <th>Main Projects</th>
+            <!-- <th>After</th> -->
           </tr>
           <tr>
             <td>
               <img
+                id="image1"
                 class="image1"
                 src="images/unfinishedparkinglot.jpg"
                 alt="UC Health Parking Lot"
                 title="UC Health Parking Lot"
               />
+              <br />
+              <button id="before1">Before</button>
+              <button id="after1">After</button>
             </td>
-            <td>
+            <!-- <td>
               <img
                 class="image2"
                 src="images/image2.jpg"
                 alt="Finished UC Health Parking Lot"
                 title="Finished UC Health Parking Lot"
               />
-            </td>
+            </td> -->
           </tr>
           <tr>
             <td>
               <img
+                id="image2"
                 class="image3"
                 src="images/image3.JPG"
                 alt="image3"
                 title="Before Painted Arrow"
               />
+              <button id="before2">Before</button>
+              <button id="after2">After</button>
             </td>
-            <td>
+            <!-- <td>
               <img
                 class="image4"
                 src="images/image4.JPG"
                 alt="image4"
                 title="After Painted Arrow"
               />
-            </td>
+            </td> -->
           </tr>
           <tr>
             <td>
               <img
+                id="image3"
                 class="image5"
                 src="images/image5.jpg"
                 alt="GrafitiCleanup"
                 title="Before grafiti clean up"
               />
+              <button id="before3">Before</button>
+              <button id="after3">After</button>
             </td>
-            <td>
+            <!-- <td>
               <img
                 class="image6"
                 src="images/image6.jpg"
                 alt="GrafitiCleanup"
                 title="After Grafiti Clean Up"
               />
-            </td>
+            </td> -->
           </tr>
           <tr>
             <td>
               <img
+                id="image4"
                 class="image7"
                 src="images/image7.jpg"
                 alt="image7"
                 title="Before yellow stripping"
               />
+              <button id="before4">Before</button>
+              <button id="after4">After</button>
             </td>
-            <td>
+            <!-- <td>
               <img
                 class="image8"
                 src="images/image8.jpg"
                 alt="image8"
                 title="After yellow striping"
               />
-            </td>
+            </td> -->
           </tr>
           <tr>
             <td>
               <img
+                id="image5"
                 class="image9"
                 src="images/image9.jpg"
                 alt="electric vehicle"
                 title="Before Eletric Vehicle"
               />
+              <button id="before5">Before</button>
+              <button id="after5">After</button>
             </td>
-            <td>
+            <!-- <td>
               <img
                 class="image10"
                 src="images/image10.jpg"
                 alt="electric vehicle"
                 title="After Electric Vehicle"
               />
-            </td>
+            </td> -->
           </tr>
         </table>
       </div>
     </div>
+    <script>
+      function imageoneafter() {
+        const image1 = document.querySelector("#image1");
+        image1.src = "images/image2.jpg";
+      }
+      document.querySelector("#after1").addEventListener("click", function () {
+        imageoneafter();
+      });
+
+      function imageonebefore() {
+        const image2 = document.querySelector("#image1");
+        image2.src = "images/unfinishedparkinglot.jpg";
+      }
+      document.querySelector("#before1").addEventListener("click", function () {
+        imageonebefore();
+      });
+
+      function imagetwoafter() {
+        const image3 = document.querySelector("#image2");
+        image3.src = "images/image4.jpg";
+      }
+      document.querySelector("#after2").addEventListener("click", function () {
+        imagetwoafter();
+      });
+
+      function imagetwobefore() {
+        const image4 = document.querySelector("#image2");
+        image4.src = "images/image3.jpg";
+      }
+      document.querySelector("#before2").addEventListener("click", function () {
+        imagetwobefore();
+      });
+
+      function imagethreeafter() {
+        const image5 = document.querySelector("#image3");
+        image5.src = "images/image6.jpg";
+      }
+      document.querySelector("#after3").addEventListener("click", function () {
+        imagethreeafter();
+      });
+
+      function imagethreebefore() {
+        const image6 = document.querySelector("#image3");
+        image6.src = "images/image5.jpg";
+      }
+      document.querySelector("#before3").addEventListener("click", function () {
+        imagethreebefore();
+      });
+
+      function imagefourafter() {
+        const image7 = document.querySelector("#image4");
+        image7.src = "images/image8.jpg";
+      }
+      document.querySelector("#after4").addEventListener("click", function () {
+        imagefourafter();
+      });
+
+      function imagefourbefore() {
+        const image8 = document.querySelector("#image4");
+        image8.src = "images/image7.jpg";
+      }
+      document.querySelector("#before4").addEventListener("click", function () {
+        imagefourbefore();
+      });
+
+      function imagefiveafter() {
+        const image9 = document.querySelector("#image5");
+        image9.src = "images/image10.jpg";
+      }
+      document.querySelector("#after5").addEventListener("click", function () {
+        imagefiveafter();
+      });
+
+      function imagefivebefore() {
+        const image10 = document.querySelector("#image5");
+        image10.src = "images/image9.jpg";
+      }
+      document.querySelector("#before5").addEventListener("click", function () {
+        imagefivebefore();
+      });
+    </script>
   </body>
 </html>
